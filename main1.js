@@ -1,13 +1,13 @@
-function PostItem(prop) {
-  var urlPic = `images/${prop.img}`;
+function PostItem(props) {
+  var urlPic = `images/${props.img}`;
   return (
     <li>
-      <a href="#"><img src={urlPic} alt={prop.img} /></a>
+      <a href="#"><img src={urlPic} alt={props.img} /></a>
       <div className="khoiphai">
-        <h2><a href="#">{prop.title}</a></h2>
-        <p>{prop.content}</p>
+        <h2><a href="#">{props.title}</a></h2>
+        <p>{props.content}</p>
       </div>
-      <div class="clr"></div>
+      <div className="clr"></div>
     </li>
   )
 }
@@ -40,6 +40,7 @@ const App = (
       {listNews.map(function (news) {
         return (
           <PostItem
+            key={news.id}
             img={news.img}
             title={news.title}
             content={news.content}
