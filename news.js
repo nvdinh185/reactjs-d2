@@ -1,17 +1,3 @@
-function PostItem(props) {
-  var urlPic = `images/${props.img}`;
-  return (
-    <li>
-      <a href="#"><img src={urlPic} alt={props.img} /></a>
-      <div className="khoiphai">
-        <h2><a href="#">{props.title}</a></h2>
-        <p>{props.content}</p>
-      </div>
-      <div className="clr"></div>
-    </li>
-  )
-}
-
 const listNews = [
   {
     id: 1,
@@ -32,23 +18,3 @@ const listNews = [
     content: 'Các teen girl nhà mình hẳn đang rất hào hứng chọn những bộ đồ thật đẹp để đi chơi 8/3. Những gợi ý ăn mặc dưới đây sẽ giúp các nàng có những set đồ thật đẹp để diện trong ngày 8.3 nhé!'
   }
 ];
-
-const App = (
-  <div className='wrapper'>
-    <h1>Trang tin VinaEnter Edu</h1>
-    <ul>
-      {listNews.map(function (news) {
-        return (
-          <PostItem
-            key={news.id}
-            img={news.img}
-            title={news.title}
-            content={news.content}
-          />
-        )
-      })}
-    </ul>
-  </div>
-)
-
-ReactDOM.render(App, document.getElementById("root"))
