@@ -1,8 +1,7 @@
 function PostItem(props) {
-  var urlPic = `images/${props.img}`;
   return (
     <li>
-      <a href="#"><img src={urlPic} alt={props.img} /></a>
+      <a href="#"><img src={"images/" + props.img} alt={props.img} /></a>
       <div className="khoiphai">
         <h2><a href="#">{props.title}</a></h2>
         <p>{props.content}</p>
