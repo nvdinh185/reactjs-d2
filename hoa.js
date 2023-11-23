@@ -28,18 +28,6 @@ const listHoa = [
     tenHoa: 'Hoa Violet',
     loaiHoa: 'Hoa kỷ niệm',
     hinhAnh: 'hoa3.jpg'
-  },
-  {
-    id: 4,
-    tenHoa: 'Hoa thủy tiên',
-    loaiHoa: 'Hoa tình yêu',
-    hinhAnh: 'hoa4.jpg'
-  },
-  {
-    id: 5,
-    tenHoa: 'Hoa cẩm chướng',
-    loaiHoa: 'Hoa hạnh phúc',
-    hinhAnh: 'hoa5.jpg'
   }
 ]
 
