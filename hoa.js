@@ -1,11 +1,11 @@
 function PostItem(prop) {
-  var urlPic = `images/${prop.hinhAnh}`;
+
   return (
     <tr>
       <td>{prop.id}</td>
       <td><a href="#" title={prop.tenHoa}>{prop.tenHoa}</a></td>
       <td>{prop.loaiHoa}</td>
-      <td><img src={urlPic} alt={prop.hinhAnh} /></td>
+      <td><img src={'images/' + prop.hinhAnh} alt={prop.hinhAnh} /></td>
     </tr>
   )
 }
